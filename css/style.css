@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* --- Layout Section --- */
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #f2b5c4, #dfa0c0, #f3e6ea);
+}
+
+/* --- Video Background --- */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Behind the card */
+    pointer-events: none; /* Ensures user clicks go through to card if needed */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* Hidden by default! */
+    opacity: 0.8;
+}
+
+/* --- Floating Animation Keyframes --- */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* --- Main Card Container --- */
+.container {
+    z-index: 2; /* Sits on top of video */
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    
+    /* Responsive Sizing */
+    width: 90%; 
+    max-width: 450px; 
+    height: auto;
+    min-height: 500px;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    /* Smooth Animations */
+    animation: float 6s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.image-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.actual-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif {
+    max-width: 100%;
+    max-height: 250px; /* Limits gif size on big screens */
+    object-fit: contain;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.text-one {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #4a4a4a;
+    transition: opacity 0.3s ease;
+}
+
+/* --- Buttons --- */
+.yes-no {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 70px;
+}
+
+button {
+    font-family: "Allura", cursive;
+    font-size: 2.2rem;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #FB607F;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    
+    /* Bouncy Transition */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.yes { width: 45%; }
+.no { width: 45%; }
+
+button:hover {
+    background-color: #e04565;
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 8px 20px rgba(251, 96, 127, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Link inside button */
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Allura", cursive;
+    font-size: 2.2rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+}
+
+/* --- Mobile Landscape Fix --- */
+@media (max-height: 500px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+        min-height: 300px;
+        height: 90vh;
+        max-width: 700px;
+    }
+    .image-box { width: 50%; }
+    .yes-no {
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        justify-content: center;
+    }
+    .yes, .no { width: 100%; height: 60px; }
+}
+/* ... Keep all your existing CSS above ... */
+
+/* --- Footer Styling --- */
+.footer {
+    position: fixed; /* Stick to the bottom of the screen */
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10; /* Ensure it's above the background */
+    pointer-events: none; /* Allows clicks to pass through if it overlaps buttons */
+}
+
+.footer p {
+    margin: 2px 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.75rem; /* Small and subtle */
+    color: #6d6d6d;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); /* White shadow for readability */
+}
+
+#visitor-count {
+    font-weight: 600;
+    color: #FB607F; /* Pink color for the count */
+}
+
+/* Hide footer on very short screens so it doesn't block buttons */
+@media (max-height: 450px) {
+    .footer {
+        display: none;
+    }
+}
