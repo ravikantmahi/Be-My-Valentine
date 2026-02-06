@@ -84,7 +84,7 @@ When the user finally accepts, a celebration animation triggers with a backgroun
 <a href="https://github.com/Ravikantmahi">
 <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
-<a href="https://www.instagram.com/ravikant_mahii">
+<a href="https://www.instagram.com/ravikant.mahii">
 <img src="https://www.google.com/search?q=https://img.shields.io/badge/Instagram-Follow-E4405F%3Fstyle%3Dfor-the-badge%26logo%3Dinstagram%26logoColor%3Dwhite" />
 </a>
 </p>
