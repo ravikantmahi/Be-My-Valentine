@@ -1,12 +1,9 @@
-# Be-My-Valentine
-A responsive, interactive Valentine's Day proposal 💘 website where the "No" button plays hard to get! Features smooth animations, and a cute visitor counter. 
-Here is a professional and stylish `README.md` for your Valentine's project. I have customized it to match the style of your personal profile, using your badges and contact information.
 <br />
 <p align="center">
   <img src="resources/cat-heart.gif" alt="Valentine Gif" width="150">
 </p>
-
-<h1 align="center">💘 Valentine's Day Proposal Website</h1>
+<h1 align="center"> Be-My-Valentine</h1>
+<h2 align="center">💘 Valentine's Day Proposal Website</h2>
 <p align="center">
   <b>A responsive, interactive, and animated web experience to ask the big question!</b>
 </p>
@@ -29,7 +26,7 @@ Here is a professional and stylish `README.md` for your Valentine's project. I h
 
 ### 📖 About The Project
 
-This is a fun, lighthearted web application designed to ask "Will you be my Valentine?". It features a playful mechanic where the **"No"** button is difficult to click (it shrinks, moves, and changes text), while the **"Yes"** button grows and eventually takes over the screen.
+This is a fun, lighthearted web application designed to ask "Will you be my Valentine?". It features a playful mechanic where the **"No"** button is difficult to click (it shrinks, moves, and changes text), while the **"Yes"** button grows and eventually takes over the screen.A responsive, interactive Valentine's Day proposal 💘 website where the "No" button plays hard to get! Features smooth animations, and a cute visitor counter. 
 
 When the user finally accepts, a celebration animation triggers with a background video and a direct link to message the creator.
 
