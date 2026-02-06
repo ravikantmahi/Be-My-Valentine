@@ -70,7 +70,6 @@ When the user finally accepts, a celebration animation triggers with a backgroun
 ### 🚀 How to Run Locally
 
 
-**Live Server** extension in VS Code for the best experience.
 
 
 
