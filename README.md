@@ -1,4 +1,7 @@
 <br />
+
+## 🔗 [Live Demo](https://ravikantmahi.github.io/Be-My-Valentine/)
+
 <p align="center">
   <img src="resources/cat-heart.gif" alt="Valentine Gif" width="150">
 </p>
@@ -17,8 +20,7 @@
 
 <p align="center">
   <a href="#-features">Features</a> •
-  <a href="#-how-to-use">How To Use</a> •
-  <a href="#-customization">Customization</a> •
+  <a href="#">📂 Folder Structure</a> •
   <a href="#-author">Author</a>
 </p>
 
@@ -63,9 +65,6 @@ When the user finally accepts, a celebration animation triggers with a backgroun
 ```
 
 ---
-
-### 🚀 How to Run Locally
-
 
 
 
